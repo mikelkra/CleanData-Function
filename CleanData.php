@@ -23,5 +23,7 @@
 				}
 			}
 			return $cleanData;
+			
+			$momo = "whats up";
 		}
 ?>
