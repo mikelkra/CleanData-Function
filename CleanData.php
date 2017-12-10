@@ -1,8 +1,8 @@
 <?php
-		function sauber($data) {
+		function cleanThisData($data) {
 			if (is_array ( $data )) {
 				// if data is array then do the mapping and send the values back to the same function one by one
-				$cleanData = array_map ( 'sauberMachen', $data );
+				$cleanData = array_map ( 'cleanThisData', $data );
 			} else {
 				
 				if (filter_var ( $data, FILTER_VALIDATE_EMAIL )) {
@@ -24,6 +24,5 @@
 			}
 			return $cleanData;
 			
-			$momo = "whats up";
 		}
 ?>
